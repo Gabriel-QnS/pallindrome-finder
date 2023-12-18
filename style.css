@@ -1,0 +1,7 @@
+@import url("./node_modules/bootstrap/dist/css/bootstrap.min.css");
+@import url("./node_modules/bootstrap/dist/css/bootstrap-reboot.min.css");
+
+html{
+    background-color: #333;
+    color: #fff;
+}
