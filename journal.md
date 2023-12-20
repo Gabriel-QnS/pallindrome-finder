@@ -5,5 +5,5 @@ inputted text is received inside a function, there is no need to prepare a GUI f
 -- to do this, use charAt() built in function charcodeat(location) 
 -- turn everything into lower or uppercase for easier comparison
 -- check if number, if not, check if letter, if not, remove from string
--- map function would net good results
+-- filter* function would net good results
 - cleansed array must be reversed, then compared with original, return true if equal, else false 

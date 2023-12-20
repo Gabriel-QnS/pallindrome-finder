@@ -18,11 +18,13 @@ function palindrome(str) {
       else if (isLowercaseLetter(x)) return char;
       else;
     });
-    return cleanArr
+    return cleanArr.join('')
+  };
+
+  const isPallindrome = (str) => { // only use clean arrays
+
   }
 
   // test area do not change
 
-console.log(cleanser('123'))
-console.log(cleanser('1 2*3'))
-console.log(cleanser('1_____2|@#|@#|@#*3``ñ´´+´´´++´+´+´+´++'))
+console.log(cleanser('456/*1456'))
