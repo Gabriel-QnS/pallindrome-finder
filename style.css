@@ -17,8 +17,24 @@ span.icon{
 main {
     background-image: url('./images/books.jpg');
     background-size: cover;
+    min-height: 100vh;
+    height: 800px;
 }
 
 section{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));
     background-color: rgba(40, 45, 49, 0.5);
+    height: 100%;
+    position: relative;
+}
+
+#attributions{
+    position: absolute;
+    bottom: 0;
+    right:0;
+}
+
+#buttons button{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
