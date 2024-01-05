@@ -34,3 +34,38 @@ console.log(palindrome('123'))
 console.log(palindrome('12321'))
 console.log(palindrome('racecar'))
 console.log(palindrome('Able was I ere I saw Elba.'))
+
+// for the dom
+
+const runBtn = document.querySelector('#check-btn');
+const input = document.querySelector('#text-input');
+
+const buttonModule = (()=>{
+
+  // defining sources
+
+  function getInput(){
+    return input.value
+  }
+
+  function isEmpty(input){
+    if(input.length < 1){
+      alert('Please input a value.')
+    }
+  }
+
+  function reset(){
+
+  }
+
+  function checkPallindrome(){
+    const input = getInput();
+    isEmpty(input);
+  }
+
+  return {
+    check: checkPallindrome
+  }
+})();
+
+runBtn.onclick = buttonModule.check
