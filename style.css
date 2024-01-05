@@ -5,3 +5,20 @@ html{
     background-color: #333;
     color: #fff;
 }
+
+*{
+    box-sizing: border-box;
+}
+
+span.icon{
+    font-size: 70%;
+}
+
+main {
+    background-image: url('./images/books.jpg');
+    background-size: cover;
+}
+
+section{
+    background-color: rgba(40, 45, 49, 0.5);
+}

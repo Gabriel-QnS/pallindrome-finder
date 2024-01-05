@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pallindrome Finder</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
 </head>
 <body>
     <main>
-        <section id="app-pallindrome" class="">
+        <section id="app-pallindrome" class="text-light">
             <div>
                 <h1>Pallindrome Checker</h1>
                 <p >Enter a word and press the button to find out if it's a pallindrome!</p>
@@ -17,12 +20,16 @@
             <div class="input-area">
                 <input type="text" name="user-word" id="text-input">
                 <label for="user-word">Enter your word here</label>
-                <button id="check-btn" type="button" class="btn btn-primary">Check</button>
+                <button id="check-btn" type="button" class="btn btn-primary">Check <span class="icon"><i class="fi fi-rr-search"></i></span></button>
+                <button id="reset" type="button" class="btn btn-danger">Clear <span class="icon"><i class="fi fi-br-cross"></i></span></button>
             </div>
             <div id="result">
             </div>
         </section>
     </main>
+    <div class="attributions">
+        <span>Image by <a href="https://www.freepik.com/free-photo/top-view-books-arrangement_12975498.htm#query=book&position=44&from_view=search&track=sph&uuid=8bea1d39-1412-4b9c-a3ba-72bac37f2447">Freepik</a></span>
+    </div>
     <script src="scripts.js"></script>
 </body>
 </html>

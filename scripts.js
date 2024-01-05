@@ -59,7 +59,7 @@ const domModule = (()=>{
   }
 
   function reset(){
-
+    input.value = '';
   }
 
   function update(input, result){
@@ -74,7 +74,8 @@ const domModule = (()=>{
   }
 
   return {
-    check: checkPallindrome
+    check: checkPallindrome,
+    reset,
   }
 })();
 
