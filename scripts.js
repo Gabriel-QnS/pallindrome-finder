@@ -41,8 +41,9 @@
 
 const runBtn = document.querySelector('#check-btn');
 const input = document.querySelector('#text-input');
+const resultText = document.querySelector('#result');
 
-const buttonModule = (()=>{
+const domModule = (()=>{
 
   // defining sources
 
@@ -61,12 +62,15 @@ const buttonModule = (()=>{
 
   }
 
+  function update(input, result){
+    resultText.innerText = `The Word ${input} ${(result)? 'is' : 'is not'} a pallindrome.`;
+  }
+
   function checkPallindrome(){
     const input = getInput();
     if(isEmpty(input)) return;
     const result = isPall(input);
-    console.log(result)
-    return isPall(result);
+    update(input, result);
   }
 
   return {
@@ -74,4 +78,4 @@ const buttonModule = (()=>{
   }
 })();
 
-runBtn.onclick = buttonModule.check
+runBtn.onclick = domModule.check
