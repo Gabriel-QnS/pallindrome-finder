@@ -21,19 +21,21 @@
     return str == reverse? true : false
   }
 
-  const palindrome = (str) => {
+  const palindromeCheckerScript = (str) => {
     if (!isString(str)) return false;
     let clean = cleanser(str);
     return isPallindrome(clean)
   }
 
+  const isPall = palindromeCheckerScript;
+
 
   // test area do not change
 
-console.log(palindrome('123'))
-console.log(palindrome('12321'))
-console.log(palindrome('racecar'))
-console.log(palindrome('Able was I ere I saw Elba.'))
+// console.log(isPall('123'))
+// console.log(isPall('12321'))
+// console.log(isPall('racecar'))
+// console.log(isPall('Able was I ere I saw Elba.'))
 
 // for the dom
 
@@ -51,7 +53,8 @@ const buttonModule = (()=>{
   function isEmpty(input){
     if(input.length < 1){
       alert('Please input a value.')
-    }
+      return true
+    } else return false
   }
 
   function reset(){
@@ -60,7 +63,10 @@ const buttonModule = (()=>{
 
   function checkPallindrome(){
     const input = getInput();
-    isEmpty(input);
+    if(isEmpty(input)) return;
+    const result = isPall(input);
+    console.log(result)
+    return isPall(result);
   }
 
   return {
