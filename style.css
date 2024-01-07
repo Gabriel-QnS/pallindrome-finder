@@ -1,40 +1,44 @@
 @import url("./node_modules/bootstrap/dist/css/bootstrap.min.css");
 @import url("./node_modules/bootstrap/dist/css/bootstrap-reboot.min.css");
 
-html{
-    background-color: #333;
-    color: #fff;
+html {
+  background-color: #333;
+  color: #fff;
 }
 
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-span.icon{
-    font-size: 70%;
+span.icon {
+  font-size: 70%;
 }
 
 main {
-    background-image: url('./images/books.jpg');
-    background-size: cover;
-    min-height: 100vh;
-    height: 800px;
+  background-image: url("./images/books.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  height: 800px;
 }
 
-section{
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));
-    background-color: rgba(40, 45, 49, 0.5);
-    height: 100%;
-    position: relative;
+section {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.8)
+  );
+  background-color: rgba(40, 45, 49, 0.5);
+  height: 100%;
+  position: relative;
 }
 
-#attributions{
-    position: absolute;
-    bottom: 0;
-    right:0;
+#attributions {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
-#buttons button{
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+#buttons button {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }

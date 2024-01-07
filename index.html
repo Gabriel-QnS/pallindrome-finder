@@ -1,41 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Palindrome Finder</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.1.0/uicons-bold-rounded/css/uicons-bold-rounded.css"
+    />
+  </head>
+  <body>
     <main>
-        <section id="app-pallindrome" class="text-light text-center p-2 p-lg-4">
-            <div>
-                <h1>Palindrome Checker</h1>
-                <p >Enter a word and press the button to find out if it's a palindrome!</p>
-                <p>A palindrome is a word that is read and written the same in both directions, like <strong>'Bob'</strong>.</p>
-            </div>
-            <div class="input-area">
-                <div id="inputs" class="d-flex flex-row-reverse justify-content-center gap-2">
-                    <input type="text" name="user-word" id="text-input" class="bg-dark-subtle">
-                    <label for="user-word">Enter your word here</label>
-                </div>
-                <div id="buttons" class="mt-2 p-2">
-                    <button id="check-btn" type="button" class="btn btn-primary">Check <span class="icon"><i class="fi fi-rr-search"></i></span></button>
-                    <button id="reset" type="button" class="btn btn-danger">Clear <span class="icon"><i class="fi fi-br-cross"></i></span></button>
-                </div>
-            </div>
-            <div id="result">
-            </div>
-            <div id="attributions" class="text-end p-2">
-                <span>Books Image by <a href="https://www.freepik.com/free-photo/top-view-books-arrangement_12975498.htm#query=book&position=44&from_view=search&track=sph&uuid=8bea1d39-1412-4b9c-a3ba-72bac37f2447" class="link-light">Freepik</a></span><br>
-                <span>Made by <a href="https://github.com/" class="link-warning">Gabriel R.</a></span>
-            </div>
-        </section>
+      <section id="app-pallindrome" class="text-light text-center p-2 p-lg-4">
+        <div>
+          <h1>Palindrome Checker</h1>
+          <p>
+            Enter a word and press the button to find out if it's a palindrome!
+          </p>
+          <p>
+            A palindrome is a word that is read and written the same in both
+            directions, like <strong>'Bob'</strong>.
+          </p>
+        </div>
+        <div class="input-area">
+          <div
+            id="inputs"
+            class="d-flex flex-row-reverse justify-content-center gap-2"
+          >
+            <input
+              type="text"
+              name="user-word"
+              id="text-input"
+              class="bg-dark-subtle"
+            />
+            <label for="user-word">Enter your word here</label>
+          </div>
+          <div id="buttons" class="mt-2 p-2">
+            <button id="check-btn" type="button" class="btn btn-primary">
+              Check <span class="icon"><i class="fi fi-rr-search"></i></span>
+            </button>
+            <button id="reset" type="button" class="btn btn-danger">
+              Clear <span class="icon"><i class="fi fi-br-cross"></i></span>
+            </button>
+          </div>
+        </div>
+        <div id="result"></div>
+        <div id="attributions" class="text-end p-2">
+          <span
+            >Books Image by
+            <a
+              href="https://www.freepik.com/free-photo/top-view-books-arrangement_12975498.htm#query=book&position=44&from_view=search&track=sph&uuid=8bea1d39-1412-4b9c-a3ba-72bac37f2447"
+              class="link-light"
+              >Freepik</a
+            ></span
+          ><br />
+          <span
+            >Made by
+            <a href="https://github.com/" class="link-warning"
+              >Gabriel R.</a
+            ></span
+          >
+        </div>
+      </section>
     </main>
-    
+
     <script src="scripts.js"></script>
-</body>
+  </body>
 </html>
